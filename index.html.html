@@ -1,0 +1,161 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>اختبار الجغرافيا — الصف الأول الثانوي</title>
+<style>
+:root{--ink:#172033;--muted:#5f6b7a;--brand:#176b87;--brand2:#0f8b8d;--bg:#eef5f7;--card:#fff;--good:#147a4b;--bad:#b42318;--line:#d7e1e6;--gold:#e6a62a}
+*{box-sizing:border-box}body{margin:0;font-family:"Noto Naskh Arabic","Amiri","Tahoma",Arial,sans-serif;background:linear-gradient(135deg,#e8f3f5,#f8fbfc);color:var(--ink);line-height:1.8}header{background:linear-gradient(120deg,#0d455b,#176b87 55%,#0f8b8d);color:white;padding:32px 18px;text-align:center;box-shadow:0 4px 18px #0b354033}header h1{margin:0 0 5px;font-size:clamp(1.6rem,4vw,2.5rem)}header p{margin:0;opacity:.9}.wrap{max-width:1100px;margin:auto;padding:18px}.panel,.card{background:var(--card);border:1px solid var(--line);border-radius:18px;box-shadow:0 8px 24px #17465a12}.panel{padding:20px;margin-bottom:18px}.identity{display:grid;grid-template-columns:1fr 1fr;gap:14px}.identity label{font-weight:700}.identity input,.term-input,select,textarea{width:100%;border:1px solid #bccbd2;border-radius:10px;padding:10px 12px;font:inherit;background:#fbfdfe;color:var(--ink)}.identity input:focus,.term-input:focus,select:focus,textarea:focus{outline:3px solid #83cdd0aa;border-color:var(--brand)}.stats{display:flex;flex-wrap:wrap;gap:10px;align-items:center;justify-content:space-between}.pill{background:#e7f4f4;border-radius:999px;padding:5px 13px;font-weight:700;color:#12596b}.progress{height:12px;background:#dce8ec;border-radius:99px;overflow:hidden;margin-top:12px}.progress>span{display:block;height:100%;background:linear-gradient(90deg,var(--brand),var(--brand2));width:0;transition:width .3s}.section-title{display:flex;align-items:center;gap:10px;margin:28px 0 12px;color:#0b536b}.section-title span{background:var(--brand);color:#fff;border-radius:50%;width:34px;height:34px;display:grid;place-items:center}.question{padding:18px;border:1px solid var(--line);border-radius:15px;margin:12px 0;background:#fff}.q-head{display:flex;gap:10px;align-items:flex-start}.q-num{flex:0 0 auto;background:#e8f3f5;color:#0d6274;border-radius:9px;padding:2px 9px;font-weight:800}.q-text{font-weight:700;flex:1}.q-points{flex:0 0 auto;background:#fff4d9;color:#8a5a00;border:1px solid #ead39b;border-radius:999px;padding:2px 10px;font-size:.9rem;font-weight:800;white-space:nowrap}.choices{display:grid;gap:9px;margin-top:12px}.choice{display:block;border:1px solid #cbd9de;padding:10px 12px;border-radius:10px;cursor:pointer;transition:.2s}.choice:hover{background:#f1fafb;border-color:#69b2bd}.choice input{margin-left:8px;accent-color:var(--brand)}button{border:0;border-radius:10px;padding:9px 16px;font:inherit;font-weight:700;cursor:pointer;background:var(--brand);color:white}button:hover{filter:brightness(.95)}button:disabled{opacity:.6;cursor:not-allowed}.confirm{margin-top:12px;background:#176b87}.feedback{margin-top:12px;border-radius:10px;padding:10px 12px;font-weight:700}.feedback.good{background:#e7f6ee;color:var(--good);border:1px solid #a9dfbf}.feedback.bad{background:#fff0ee;color:var(--bad);border:1px solid #f0b4ac}.feedback.neutral{background:#eef5ff;color:#174d83;border:1px solid #b9cff0}.locked{opacity:.82}.match-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px;align-items:center}.match-head{font-weight:800;background:#edf6f7;padding:8px;border-radius:9px;text-align:center}.match-answer{background:#fffaf0;border-color:#ead39b}.match-panel .question{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:10px 16px;align-items:center}.match-panel .q-head{grid-row:1}.match-panel .match-answer{grid-column:2;grid-row:1}.match-panel .confirm{grid-column:1 / -1;justify-self:start}.match-panel .feedback{grid-column:1 / -1}.term-input{margin-top:12px}.essay textarea{min-height:95px;resize:vertical}.finish{position:sticky;bottom:10px;margin-top:22px;padding:14px;background:#fff;border:1px solid var(--line);border-radius:15px;box-shadow:0 8px 30px #103c4b25;display:flex;justify-content:space-between;align-items:center;gap:12px}.score{font-size:1.2rem;color:#0b536b}.hidden{display:none}.note{color:var(--muted);font-size:.95rem}.results{border:2px solid var(--gold);background:#fffaf0;text-align:center}.small{font-size:.9rem;color:var(--muted)}@media(max-width:650px){.identity,.match-grid{grid-template-columns:1fr}.q-head{flex-wrap:wrap}.q-points{margin-right:auto}.match-panel .question{display:block}.match-panel .match-answer{margin-top:12px}.finish{position:static;flex-direction:column;align-items:stretch}.finish button{width:100%}}
+ .dashboard-head{display:flex;justify-content:space-between;gap:16px;align-items:flex-start}.dashboard h2{margin-top:0;color:#0b536b}.export-actions{display:flex;gap:8px;flex-wrap:wrap}.export-actions button{font-size:.92rem}.export-actions .danger{background:#8b3a3a}.dash-cards{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin:16px 0}.dash-card{background:#f1f8f8;border:1px solid #cfe2e4;border-radius:12px;padding:13px;text-align:center}.dash-card b{display:block;font-size:1.45rem;color:#0b6474}.dash-card span{font-size:.9rem;color:var(--muted)}.wrong-table{width:100%;border-collapse:collapse;font-size:.95rem}.wrong-table th,.wrong-table td{border-bottom:1px solid var(--line);padding:8px;text-align:right;vertical-align:top}.wrong-table th{background:#edf6f7;color:#0b536b}.wrong-table tr:last-child td{border-bottom:0}.error-count{color:var(--bad);font-weight:800}@media(max-width:720px){.dashboard-head{display:block}.export-actions{margin-top:12px}.dash-cards{grid-template-columns:repeat(2,1fr)}}
+</style>
+</head>
+<body>
+<header><h1>اختبار الجغرافيا</h1><p>الصف الأول الثانوي — اختبار تفاعلي من مقرر الجغرافيا المرفق</p></header>
+<main class="wrap">
+<section class="panel">
+  <h2>بيانات الطالب</h2>
+  <div class="identity"><label>اسم الطالب<input id="firstName" autocomplete="given-name" placeholder="اكتب الاسم الأول"></label><label>اسم العائلة<input id="lastName" autocomplete="family-name" placeholder="اكتب اسم العائلة"></label></div>
+  <p class="note">يُصحَّح كل سؤال فور تأكيده، ولا يمكن تغيير الإجابة بعد التأكيد. الدرجة الكلية: 90 درجة.</p>
+</section>
+<section class="panel"><div class="stats"><span class="pill">الأسئلة المؤكدة: <b id="answered">0</b> / 90</span><span class="pill">الدرجة الحالية: <b id="score">0</b> / 90</span><span class="pill" id="saveState">الحفظ المحلي جاهز</span></div><div class="progress"><span id="bar"></span></div></section>
+<section class="panel dashboard"><div class="dashboard-head"><div><h2>لوحة تحكم الأداء</h2><p class="note">تُحدَّث الإحصائيات تلقائيًا بعد تأكيد الإجابات، وتُحفظ محليًا على هذا الجهاز.</p></div><div class="export-actions"><button id="exportExcel" type="button">تصدير النتائج والأسئلة إلى Excel</button><button id="clearStats" type="button" class="danger">مسح الإحصائيات المحلية</button></div></div><div class="dash-cards"><div class="dash-card"><b id="attemptsStat">0</b><span>عدد المحاولات</span></div><div class="dash-card"><b id="averageStat">0%</b><span>متوسط الدقة</span></div><div class="dash-card"><b id="currentStat">0 / 90</b><span>نتيجة المحاولة الحالية</span></div><div class="dash-card"><b id="wrongStat">0</b><span>إجابات خاطئة حاليًا</span></div></div><h3>الأسئلة الأكثر خطأ</h3><div id="wrongQuestions"><p class="note">لم تُسجَّل إجابات بعد.</p></div></section>
+<div id="quiz"></div>
+<section class="finish"><div class="score">النتيجة الحالية: <b id="finalScore">0</b> / 90</div><button id="finishBtn" type="button">إنهاء الاختبار وحفظ النتيجة</button></section>
+<section id="results" class="panel results hidden"></section>
+</main>
+<script>
+'use strict';
+const quizData={
+ tf:[
+ ['يدرس علم الفلك بنية الكون وتطوره وقوانينه وحركة أجرامه.','true','صحيح؛ يتناول علم الفلك بنية الكون وتطوره وحركة أجرامه.'],
+ ['المذنب جرم سماوي مضيء بذاته مثل النجوم.','false','خطأ؛ المذنب جسم يدور حول الشمس ويظهر له ذيل عند اقترابه منها، وليس نجمًا مضيئًا بذاته.'],
+ ['المجموعة الشمسية جزء من مجرة درب التبانة.','true','صحيح؛ تقع المجموعة الشمسية ضمن مجرة درب التبانة.'],
+ ['تدور الأرض حول الشمس في مدار دائري كامل لا يتغير.','false','خطأ؛ مدار الأرض حول الشمس بيضاوي الشكل.'],
+ ['الصاروخ وسيلة مناسبة للخروج من نطاق الجاذبية الأرضية.','true','صحيح؛ تستخدم الصواريخ قوة دفع كبيرة للتغلب على الجاذبية.'],
+ ['المكوك الفضائي لا يستطيع العودة إلى الأرض بعد وصوله إلى الفضاء.','false','خطأ؛ المكوك الفضائي يشبه الطائرة ويمكنه العودة إلى الأرض.'],
+ ['الكون يضم عددًا كبيرًا من المجرات والأنظمة النجمية.','true','صحيح؛ الكون يضم المجرات والنجوم والكواكب والأجرام المختلفة.'],
+ ['تحدث ظاهرة الكسوف عندما يحجب القمر ضوء الشمس عن الأرض.','true','صحيح؛ هذا هو وصف كسوف الشمس.'],
+ ['خطوط الطول دوائر كاملة متوازية لا تلتقي.','false','خطأ؛ خطوط الطول أنصاف دوائر تلتقي عند القطبين.'],
+ ['دوائر العرض تساعد في تحديد المواقع شمال خط الاستواء أو جنوبه.','true','صحيح؛ تحدد دوائر العرض الموقع شمالًا وجنوبًا.'],
+ ['خط الاستواء من دوائر العرض الرئيسية.','true','صحيح؛ يقسم الأرض إلى نصفين شمالي وجنوبي.'],
+ ['الإحداثيات الجغرافية تعتمد على خطوط الطول ودوائر العرض.','true','صحيح؛ تستخدم الشبكة الجغرافية لتحديد المواقع.'],
+ ['الخريطة تمثيل مصغر لسطح الأرض أو جزء منه باستخدام رموز ومقياس.','true','صحيح؛ هذا تعريف الخريطة في المقرر.'],
+ ['مفتاح الخريطة يوضح مدلول الألوان والرموز المستخدمة فيها.','true','صحيح؛ يفسر المفتاح الرموز والألوان.'],
+ ['مقياس الرسم لا علاقة له بالمسافة بين الخريطة والطبيعة.','false','خطأ؛ مقياس الرسم يبين العلاقة بين المسافة على الخريطة والمسافة الحقيقية.'],
+ ['الخريطة الطبوغرافية تهتم بإظهار مظاهر سطح الأرض وارتفاعاتها.','true','صحيح؛ تعرض التضاريس والارتفاعات بخطوط الكنتور وغيرها.'],
+ ['الصور الجوية تلتقط من الأقمار الصناعية فقط.','false','خطأ؛ الصور الجوية تلتقط من الطائرات، أما صور الأقمار الصناعية فتلتقط من الفضاء.'],
+ ['الاستشعار عن بعد يتيح دراسة مناطق يصعب الوصول إليها ميدانيًا.','true','صحيح؛ من تطبيقاته دراسة مناطق واسعة أو وعرة.'],
+ ['الصور الفضائية لا تستخدم في دراسة المناخ.','false','خطأ؛ تستخدم في متابعة السحب والظواهر المناخية والتغيرات البيئية.'],
+ ['السكان هم مجموعة من الأفراد يعيشون في مكان محدد.','true','صحيح؛ هذا معنى السكان في الدرس.'],
+ ['يتشابه البشر جميعًا في ألوانهم وأشكالهم.','false','خطأ؛ يختلف البشر في بعض الصفات مع وحدة النوع البشري.'],
+ ['توزيع السكان يعني نمط انتشارهم على سطح الأرض.','true','صحيح؛ يوضح أين يتركز السكان وأين يقلون.'],
+ ['الكثافة السكانية تساوي عدد السكان بالنسبة إلى مساحة المكان.','true','صحيح؛ هي مقياس للعلاقة بين السكان والمساحة.'],
+ ['الهجرة تعني انتقال السكان من مكان إلى آخر.','true','صحيح؛ قد تكون داخلية أو خارجية.'],
+ ['الزراعة التقليدية تعتمد غالبًا على أدوات بسيطة وخبرة متوارثة.','true','صحيح؛ هذه من خصائص الزراعة التقليدية.'],
+ ['الزراعة الحديثة تستخدم التقنيات لرفع الإنتاجية.','true','صحيح؛ تعتمد على الآلات والأساليب العلمية.'],
+ ['المدينة تجمع سكاني تقل فيه الأنشطة والخدمات مقارنة بالريف دائمًا.','false','خطأ؛ المدينة تتميز بكثرة الأنشطة والخدمات وتنوعها.'],
+ ['التخطيط الحضري يهتم بتنظيم استعمالات الأرض داخل المدن.','true','صحيح؛ يوجه نمو المدينة ويحدد وظائف المناطق.'],
+ ['المناخ يصف حالة الجو في لحظة واحدة فقط.','false','خطأ؛ هذا وصف للطقس، أما المناخ فيدرس حالة الجو خلال مدد طويلة.'],
+ ['تساعد الصور الفضائية في متابعة التغيرات المناخية والظواهر الطبيعية.','true','صحيح؛ من تطبيقاتها رصد الجفاف والتصحر والفيضانات.']
+ ],
+ mcq:[
+ ['أي مما يأتي يعد جرمًا مضيئًا بذاته؟',['القمر','النجم','الكويكب','المذنب'],'النجم'],
+ ['ما الذي يفسر تعاقب الليل والنهار؟',['دوران الأرض حول محورها','دوران القمر حول الأرض','دوران الشمس حول الأرض','حركة المذنب'],'دوران الأرض حول محورها'],
+ ['أي الأجرام الآتية يدور حول الشمس ويظهر له ذيل عند اقترابه منها؟',['المذنب','القمر','السديم','المجرة'],'المذنب'],
+ ['ما الوسيلة التي تحمل المركبات والأقمار إلى الفضاء؟',['الخريطة','الصاروخ','المجهر','البوصلة'],'الصاروخ'],
+ ['المجموعة التي تضم الشمس والكواكب والأجرام التابعة لها هي:',['المجرة','المجموعة الشمسية','السديم','الغلاف الجوي'],'المجموعة الشمسية'],
+ ['أي مما يأتي يعد من إنجازات العلماء المسلمين في الفلك؟',['اختراع الاسترلاب','اختراع الهاتف','بناء محطات كهربائية','تطوير المحرك البخاري'],'اختراع الاسترلاب'],
+ ['أفضل وسيلة لتحديد الموقع على سطح الأرض هي:',['اللون','الإحداثيات الجغرافية','حجم الرمز','نوع الورق'],'الإحداثيات الجغرافية'],
+ ['الخط الذي يقسم الأرض إلى نصفين شمالي وجنوبي هو:',['خط جرينتش','خط الاستواء','مدار السرطان','القطب الشمالي'],'خط الاستواء'],
+ ['تتقاطع خطوط الطول عند:',['خط الاستواء','القطبين','مداري السرطان والجدي','مركز القارات'],'القطبين'],
+ ['تستخدم دوائر العرض أساسًا لمعرفة الموقع:',['شرقًا وغربًا','شمالًا وجنوبًا','بحريًا فقط','بالارتفاع فقط'],'شمالًا وجنوبًا'],
+ ['أي عنصر يبين معنى الرموز في الخريطة؟',['العنوان','مفتاح الخريطة','الإطار','الاتجاهات فقط'],'مفتاح الخريطة'],
+ ['النسبة بين المسافة على الخريطة والمسافة الحقيقية تسمى:',['مفتاح الخريطة','مقياس الرسم','خط الكنتور','الإسقاط'],'مقياس الرسم'],
+ ['الخريطة التي تظهر الارتفاعات ومظاهر سطح الأرض هي:',['الخريطة السياسية','الخريطة الطبوغرافية','الخريطة المناخية فقط','خريطة الطرق فقط'],'الخريطة الطبوغرافية'],
+ ['الخطوط التي تصل بين نقاط متساوية الارتفاع تسمى:',['خطوط الطول','خطوط الكنتور','دوائر العرض','خطوط السير'],'خطوط الكنتور'],
+ ['تحويل الشكل الكروي للأرض إلى سطح مستو يسمى:',['التعميم','الإسقاط','التصنيف','التوجيه'],'الإسقاط'],
+ ['الإسقاط الأنسب لتمثيل المناطق القريبة من خط الاستواء هو:',['الإسقاط الأسطواني','الإسقاط المخروطي','الإسقاط القطبي','الإسقاط العشوائي'],'الإسقاط الأسطواني'],
+ ['الصور التي تلتقطها الطائرات لسطح الأرض تسمى:',['صورًا جوية','صورًا فلكية','صورًا مجهرية','خرائط ذهنية'],'صورًا جوية'],
+ ['المعلومات التي تجمع من مسافة دون اتصال مباشر بالهدف تسمى:',['الاستشعار عن بعد','المسح اليدوي','الرسم الحر','التعداد'],'الاستشعار عن بعد'],
+ ['من تطبيقات الاستشعار عن بعد:',['متابعة الكوارث الطبيعية','إلغاء الخرائط','منع دراسة المناخ','تحديد أسماء الأشخاص'],'متابعة الكوارث الطبيعية'],
+ ['العلم الذي يدرس حالة الجو خلال مدد طويلة هو:',['علم الطقس','علم المناخ','علم السكان','علم الخرائط'],'علم المناخ'],
+ ['أي عنصر من عناصر المناخ يؤثر في توزيع الحرارة؟',['الموقع الفلكي','اسم المدينة','لون الخريطة','عدد الرموز'],'الموقع الفلكي'],
+ ['العلم الذي يدرس طبقات الأرض وبنيتها هو:',['الجيولوجيا','الديموغرافيا','الكارتوغرافيا','الفلك'],'الجيولوجيا'],
+ ['من فوائد الصور الفضائية في دراسة الأرض:',['تحديد أنواع الصخور والمعادن','زيادة تشوه الخرائط دائمًا','إلغاء العمل الميداني كليًا','منع معرفة الغطاء النباتي'],'تحديد أنواع الصخور والمعادن'],
+ ['المفهوم الذي يعبر عن عدد السكان بالنسبة للمساحة هو:',['النمو السكاني','الكثافة السكانية','الهجرة','التركيب العمري'],'الكثافة السكانية'],
+ ['انتقال السكان من الريف إلى المدينة يسمى:',['هجرة ريفية حضرية','هجرة خارجية فقط','رحلة سياحية','تعداد سكاني'],'هجرة ريفية حضرية'],
+ ['من أسباب تركز السكان قرب الأنهار:',['توافر المياه وخصوبة التربة','انعدام المواصلات','شدة الجفاف دائمًا','بعدها عن النشاط الاقتصادي'],'توافر المياه وخصوبة التربة'],
+ ['الزراعة التي تعتمد على الآلات والأساليب العلمية هي:',['الزراعة التقليدية','الزراعة الحديثة','الزراعة البدائية','الزراعة الموسمية فقط'],'الزراعة الحديثة'],
+ ['من خصائص المدينة:',['تنوع الخدمات والأنشطة','قلة السكان دائمًا','الاعتماد على الرعي فقط','انعدام التخطيط'],'تنوع الخدمات والأنشطة'],
+ ['المجال الذي ينظم نمو المدن واستعمالات الأرض هو:',['التخطيط الحضري','علم الفلك','الاستشعار الفضائي','التعداد الحيوي'],'التخطيط الحضري'],
+ ['تستخدم الخرائط في الدراسات الجغرافية لأنها:',['تنظم المعلومات المكانية وتوضح العلاقات','تستبدل الواقع تمامًا','لا تحتاج إلى رموز','تمنع المقارنة بين الأماكن'],'تنظم المعلومات المكانية وتوضح العلاقات']
+ ],
+ match:[
+ ['علل: استخدام الصواريخ في الرحلات الفضائية','التغلب على قوة الجاذبية الأرضية'],
+ ['علل: أهمية الإحداثيات الجغرافية','تحديد المواقع بدقة على سطح الأرض'],
+ ['علل: استخدام مفتاح الخريطة','تفسير الرموز والألوان المستخدمة في الخريطة'],
+ ['علل: استخدام مقياس الرسم','معرفة العلاقة بين المسافة على الخريطة والمسافة الحقيقية'],
+ ['علل: استخدام الإسقاطات الخرائطية','تحويل الشكل الكروي للأرض إلى سطح مستو'],
+ ['علل: أهمية الصور الجوية','توفير معلومات عن سطح الأرض ومظاهرها من أعلى'],
+ ['علل: استخدام الاستشعار عن بعد في دراسة الكوارث','رصد الظواهر في مناطق واسعة أو يصعب الوصول إليها'],
+ ['علل: تركز السكان قرب مصادر المياه','توافر المياه وملاءمة النشاط الزراعي والمعيشي'],
+ ['علل: اختلاف توزيع السكان على سطح الأرض','تباين الظروف الطبيعية والاقتصادية والخدمات'],
+ ['علل: أهمية التخطيط الحضري','تنظيم نمو المدن واستعمالات الأرض وتوفير الخدمات']
+ ],
+ terms:[
+ ['علم يدرس بنية الكون وتطوره وحركة أجرامه.','علم الفلك'],
+ ['الجسم الذي يدور حول الشمس ويظهر له ذيل عند اقترابه منها.','المذنب'],
+ ['خط وهمي يقسم الأرض إلى نصفين شمالي وجنوبي.','خط الاستواء'],
+ ['دوائر وهمية تحيط بالأرض من الشرق إلى الغرب.','دوائر العرض'],
+ ['تمثيل مصغر لسطح الأرض أو جزء منه باستخدام رموز.','الخريطة'],
+ ['النسبة بين المسافة على الخريطة والمسافة الحقيقية.','مقياس الرسم'],
+ ['خطوط تصل بين نقاط متساوية الارتفاع.','خطوط الكنتور'],
+ ['جمع المعلومات عن هدف من مسافة دون اتصال مباشر به.','الاستشعار عن بعد'],
+ ['عدد السكان بالنسبة إلى مساحة المكان.','الكثافة السكانية'],
+ ['تنظيم نمو المدن واستعمالات الأراضي وتوزيع الخدمات.','التخطيط الحضري']
+ ],
+ essays:[
+ ['قارن بين الكواكب والنجوم.','الكواكب: أجسام لا تضيء بذاتها وتدور حول نجم. النجوم: أجرام مضيئة بذاتها وتشع الضوء والحرارة.',['الكواكب','النجوم','تدور','مضيئة']],
+ ['قارن بين المذنب والكويكب.','المذنب يدور حول الشمس وقد يظهر له ذيل عند اقترابه منها، أما الكويكب فهو جسم صخري أصغر من الكوكب ولا يظهر له ذيل.',['مذنب','كويكب','ذيل','صخري']],
+ ['قارن بين خطوط الطول ودوائر العرض.','خطوط الطول أنصاف دوائر تلتقي عند القطبين وتحدد الموقع شرقًا وغربًا، ودوائر العرض دوائر متوازية تحدد الموقع شمالًا وجنوبًا.',['خطوط الطول','دوائر العرض','القطبين','شمالًا','شرقًا']],
+ ['قارن بين الخريطة الطبوغرافية والخريطة السياسية.','الطبوغرافية تظهر التضاريس والارتفاعات، أما السياسية فتظهر الحدود والوحدات السياسية والمدن.',['طبوغرافية','تضاريس','سياسية','حدود']],
+ ['قارن بين الصور الجوية والصور الفضائية.','الصور الجوية تلتقط من الطائرات، والصور الفضائية تلتقط بواسطة الأقمار الصناعية، وكلتاهما تساعدان في دراسة سطح الأرض.',['جوية','طائرات','فضائية','أقمار']],
+ ['قارن بين الطقس والمناخ.','الطقس حالة الجو في مدة قصيرة ومكان محدد، أما المناخ فهو متوسط حالة الجو وخصائصها خلال مدة طويلة.',['الطقس','قصيرة','المناخ','طويلة']],
+ ['قارن بين الزراعة التقليدية والزراعة الحديثة.','التقليدية تعتمد على أدوات بسيطة وخبرة متوارثة، والحديثة تعتمد على الآلات والتقنيات والأساليب العلمية لزيادة الإنتاج.',['تقليدية','أدوات','حديثة','آلات','إنتاج']],
+ ['قارن بين الريف والمدينة.','الريف تقل فيه الكثافة والخدمات غالبًا وترتبط أنشطته بالزراعة، أما المدينة فتتنوع فيها الخدمات والأنشطة وترتفع كثافتها.',['الريف','الزراعة','المدينة','الخدمات']],
+ ['قارن بين الهجرة الداخلية والهجرة الخارجية.','الهجرة الداخلية انتقال السكان داخل حدود الدولة، والخارجية انتقالهم عبر حدود الدولة إلى دولة أخرى.',['الداخلية','حدود الدولة','الخارجية','دولة أخرى']],
+ ['قارن بين الاستشعار عن بعد والعمل الميداني المباشر.','الاستشعار عن بعد يجمع المعلومات من مسافة باستخدام الصور والأجهزة، أما العمل الميداني فيعتمد على الملاحظة والقياس المباشر في الموقع.',['الاستشعار','مسافة','الميداني','المباشر','الموقع']]
+ ]
+};
+const answersB=quizData.match.map(x=>x[1]).sort(()=>Math.random()-.5);
+let score=0, answered=0, locked=new Set(), responseLog=[], currentAttemptSaved=false;
+let history=(()=>{try{return JSON.parse(localStorage.getItem('geographyQuizHistory')||'[]')}catch(e){return []}})();
+const quiz=document.getElementById('quiz');
+function esc(s){return String(s).replace(/[&<>"']/g,m=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[m]))}
+function card(id,text,body){return `<article class="question" id="q-${id}"><div class="q-head"><span class="q-num">${id}</span><div class="q-text">${esc(text)}</div><span class="q-points">الدرجة: 1</span></div>${body}<div id="fb-${id}"></div></article>`}
+function addSection(num,title,content){quiz.insertAdjacentHTML('beforeend',`<h2 class="section-title"><span>${num}</span>${title}</h2>${content}`)}
+function meta(kind,i){if(kind==='tf')return {type:'صح وخطأ',question:quizData.tf[i][0],correct:quizData.tf[i][1]==='true'?'صح':'خطأ'};if(kind==='mcq')return {type:'اختيار من متعدد',question:quizData.mcq[i][0],correct:quizData.mcq[i][2]};if(kind==='match')return {type:'توصيل',question:quizData.match[i][0],correct:quizData.match[i][1]};if(kind==='term')return {type:'مصطلح',question:quizData.terms[i][0],correct:quizData.terms[i][1]};return {type:'مقارنة',question:quizData.essays[i][0],correct:quizData.essays[i][1]}}
+function logResponse(id,kind,i,answer,ok,msg){const m=meta(kind,i);responseLog.push({id,type:m.type,question:m.question,answer:answer||'',correct:m.correct,ok,feedback:msg});localStorage.setItem('geographyQuizResponses',JSON.stringify(responseLog));renderDashboard()}
+function allQuestionRows(){return [...quizData.tf.map((q,i)=>({id:i+1,type:'صح وخطأ',question:q[0],correct:q[1]==='true'?'صح':'خطأ'})),...quizData.mcq.map((q,i)=>({id:i+31,type:'اختيار من متعدد',question:q[0],options:q[1].join(' | '),correct:q[2]})),...quizData.match.map((q,i)=>({id:i+61,type:'توصيل',question:q[0],options:answersB.join(' | '),correct:q[1]})),...quizData.terms.map((q,i)=>({id:i+71,type:'مصطلح',question:q[0],correct:q[1]})),...quizData.essays.map((q,i)=>({id:i+81,type:'مقارنة',question:q[0],correct:q[1]}))]}
+function renderDashboard(){const logs=history.flatMap(x=>x.responses||[]).concat(currentAttemptSaved?[]:responseLog);const wrong=logs.filter(x=>!x.ok),avg=history.length?Math.round(history.reduce((a,x)=>a+(x.score||0),0)/history.length/90*100):0;document.getElementById('attemptsStat').textContent=history.length;document.getElementById('averageStat').textContent=avg+'%';document.getElementById('currentStat').textContent=score+' / 90';document.getElementById('wrongStat').textContent=responseLog.filter(x=>!x.ok).length;const counts={};wrong.forEach(x=>{counts[x.id]??={id:x.id,question:x.question,count:0};counts[x.id].count++});const top=Object.values(counts).sort((a,b)=>b.count-a.count||a.id-b.id).slice(0,10);document.getElementById('wrongQuestions').innerHTML=top.length?`<table class="wrong-table"><thead><tr><th>السؤال</th><th>عدد الأخطاء</th><th>النص</th></tr></thead><tbody>${top.map(x=>`<tr><td>${x.id}</td><td class="error-count">${x.count}</td><td>${esc(x.question)}</td></tr>`).join('')}</tbody></table>`:'<p class="note">لم تُسجَّل إجابات خاطئة بعد.</p>'}
+function xml(s){return String(s??'').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;').replace(/'/g,'&apos;')}
+function exportExcel(){const rows=allQuestionRows(),logs=history.flatMap(x=>x.responses||[]).concat(currentAttemptSaved?[]:responseLog),summary=[['اسم الطالب','اسم العائلة','الدرجة','الأسئلة المؤكدة','النسبة','التاريخ'],...history.map(x=>[x.first,x.last,x.score,x.answered,Math.round(x.score/90*100)+'%',x.date])];if(!history.length)summary.push(['لا توجد محاولات محفوظة','','','','','']);const resultRows=[['رقم السؤال','النوع','السؤال','إجابة الطالب','الإجابة الصحيحة','الدرجة','التغذية الراجعة'],...logs.map(x=>[x.id,x.type,x.question,x.answer,x.correct,x.ok?1:0,x.feedback])];const questionRows=[['رقم السؤال','النوع','نص السؤال','الخيارات','الإجابة الصحيحة'],...rows.map(x=>[x.id,x.type,x.question,x.options||'',x.correct])];const sheet=(name,data)=>`<Worksheet ss:Name="${xml(name)}"><Table>${data.map(r=>'<Row>'+r.map(c=>`<Cell><Data ss:Type="String">${xml(c)}</Data></Cell>`).join('')+'</Row>').join('')}</Table></Worksheet>`;const book=`<?xml version="1.0"?><Workbook xmlns="urn:schemas-microsoft-com:office:spreadsheet" xmlns:ss="urn:schemas-microsoft-com:office:spreadsheet">${sheet('ملخص النتائج',summary)}${sheet('نتائج الأسئلة',resultRows)}${sheet('قائمة الأسئلة',questionRows)}</Workbook>`;const blob=new Blob([book],{type:'application/vnd.ms-excel;charset=utf-8'}),a=document.createElement('a');a.href=URL.createObjectURL(blob);a.download='نتائج_اختبار_الجغرافيا.xls';a.click();setTimeout(()=>URL.revokeObjectURL(a.href),1000)}
+let n=1, html='';
+quizData.tf.forEach((q,i)=>{let id=n++;html+=card(id,q[0],`<div class="choices"><label class="choice"><input type="radio" name="q${id}" value="true"> صح</label><label class="choice"><input type="radio" name="q${id}" value="false"> خطأ</label></div><button class="confirm" data-kind="tf" data-index="${i}" data-id="${id}">تأكيد الإجابة</button>`)});addSection('١','أولًا: صح أو خطأ (30 سؤالًا)',html);html='';
+quizData.mcq.forEach((q,i)=>{let id=n++;html+=card(id,q[0],`<div class="choices">${q[1].map(c=>`<label class="choice"><input type="radio" name="q${id}" value="${esc(c)}"> ${esc(c)}</label>`).join('')}</div><button class="confirm" data-kind="mcq" data-index="${i}" data-id="${id}">تأكيد الإجابة</button>`)});addSection('٢','ثانيًا: اختيار من متعدد (30 سؤالًا)',html);html='';
+quizData.match.forEach((q,i)=>{let id=n++;html+=card(id,q[0],`<select class="match-answer" data-match="${id}"><option value="">اختر الإجابة من العمود (ب)</option>${answersB.map(a=>`<option value="${esc(a)}">${esc(a)}</option>`).join('')}</select><button class="confirm" data-kind="match" data-index="${i}" data-id="${id}">تأكيد الإجابة</button>`)});addSection('٣','ثالثًا: علل أو اذكر السبب — توصيل (10 أسئلة)',`<div class="panel match-panel"><div class="match-grid"><div class="match-head">العمود (أ): السؤال</div><div class="match-head">العمود (ب): الإجابات مرتبة عشوائيًا</div></div>${html}</div>`);html='';
+quizData.terms.forEach((q,i)=>{let id=n++;html+=card(id,q[0],`<input class="term-input" data-term="${id}" placeholder="اكتب المصطلح المناسب"><button class="confirm" data-kind="term" data-index="${i}" data-id="${id}">تأكيد الإجابة</button>`)});addSection('٤','رابعًا: اكتب المصطلح المناسب للتعريف (10 أسئلة)',html);html='';
+quizData.essays.forEach((q,i)=>{let id=n++;html+=card(id,q[0],`<div class="essay"><textarea data-essay="${id}" placeholder="اكتب المقارنة في نقاط واضحة..."></textarea></div><button class="confirm" data-kind="essay" data-index="${i}" data-id="${id}">تأكيد الإجابة</button>`)});addSection('٥','خامسًا: أسئلة مقارنة — الوحدة الثالثة (10 أسئلة)',html);
+function feedback(id,ok,msg,neutral=false){const el=document.getElementById('fb-'+id);el.className='feedback '+(neutral?'neutral':ok?'good':'bad');el.innerHTML=msg}
+function finalize(id,ok,msg){if(locked.has(id))return;locked.add(id);answered++;if(ok)score++;feedback(id,ok,msg);document.querySelectorAll(`#q-${id} input,#q-${id} select,#q-${id} textarea`).forEach(x=>x.disabled=true);const b=document.querySelector(`button[data-id="${id}"]`);if(b)b.disabled=true;update();}
+function update(){document.getElementById('answered').textContent=answered;document.getElementById('score').textContent=score;document.getElementById('finalScore').textContent=score;document.getElementById('bar').style.width=(answered/90*100)+'%';}
+document.addEventListener('click',e=>{const b=e.target.closest('.confirm');if(!b)return;const id=+b.dataset.id,i=+b.dataset.index,kind=b.dataset.kind;if(locked.has(id))return;let ok=false,msg='',answer='';if(kind==='tf'){const v=document.querySelector(`input[name="q${id}"]:checked`);if(!v)return alert('اختر إجابة أولًا.');answer=v.value==='true'?'صح':'خطأ';ok=v.value===quizData.tf[i][1];msg=ok?'إجابة صحيحة. ':'إجابة غير صحيحة. ';msg+=quizData.tf[i][2]}else if(kind==='mcq'){const v=document.querySelector(`input[name="q${id}"]:checked`);if(!v)return alert('اختر إجابة أولًا.');answer=v.value;ok=v.value===quizData.mcq[i][2];msg=ok?'إجابة صحيحة. ':'إجابة غير صحيحة. الإجابة الصحيحة: '+quizData.mcq[i][2]}else if(kind==='match'){const v=document.querySelector(`[data-match="${id}"]`).value;if(!v)return alert('اختر إجابة من العمود (ب) أولًا.');answer=v;ok=v===quizData.match[i][1];msg=ok?'إجابة صحيحة. ':'إجابة غير صحيحة. الإجابة المناسبة: '+quizData.match[i][1]}else if(kind==='term'){const v=document.querySelector(`[data-term="${id}"]`).value.trim();if(!v)return alert('اكتب المصطلح أولًا.');answer=v;ok=v.replace(/[أإآ]/g,'ا').replace(/ة/g,'ه').toLowerCase()===quizData.terms[i][1].replace(/[أإآ]/g,'ا').replace(/ة/g,'ه').toLowerCase();msg=ok?'إجابة صحيحة. ':'إجابة غير صحيحة. المصطلح المناسب: '+quizData.terms[i][1]}else if(kind==='essay'){const v=document.querySelector(`[data-essay="${id}"]`).value.trim();if(!v)return alert('اكتب المقارنة أولًا.');answer=v;const hits=quizData.essays[i][2].filter(k=>v.includes(k)).length;ok=hits>=3;msg=(ok?'إجابة مقبولة وحصلت على الدرجة. ':'تحتاج المقارنة إلى مزيد من عناصر الإجابة. ')+`النموذج المقترح: ${quizData.essays[i][1]}`;}
+finalize(id,ok,msg);logResponse(id,kind,i,answer,ok,msg);});
+document.getElementById('finishBtn').addEventListener('click',()=>{const first=document.getElementById('firstName').value.trim(),last=document.getElementById('lastName').value.trim();if(!first||!last)return alert('يرجى إدخال اسم الطالب واسم العائلة.');const result={first,last,score,answered,total:90,date:new Date().toLocaleString('ar-EG'),responses:responseLog};history.push(result);localStorage.setItem('geographyQuizHistory',JSON.stringify(history));localStorage.setItem('geographyQuizResult',JSON.stringify(result));currentAttemptSaved=true;renderDashboard();document.getElementById('saveState').textContent='تم حفظ النتيجة محليًا';document.getElementById('finishBtn').disabled=true;const r=document.getElementById('results');r.classList.remove('hidden');r.innerHTML=`<h2>تم إنهاء الاختبار</h2><p>الطالب: <b>${esc(first+' '+last)}</b></p><p class="score">درجتك: <b>${score}</b> من 90</p><p class="small">عدد الأسئلة المؤكدة: ${answered} — حُفظت النتيجة وإجابات الأسئلة محليًا.</p>`;r.scrollIntoView({behavior:'smooth'});});
+document.getElementById('exportExcel').addEventListener('click',exportExcel);
+document.getElementById('clearStats').addEventListener('click',()=>{if(!confirm('هل تريد مسح جميع النتائج والإحصائيات المحلية؟'))return;history=[];responseLog=[];currentAttemptSaved=false;localStorage.removeItem('geographyQuizHistory');localStorage.removeItem('geographyQuizResult');localStorage.removeItem('geographyQuizResponses');renderDashboard();document.getElementById('saveState').textContent='تم مسح الإحصائيات المحلية';});
+const old=localStorage.getItem('geographyQuizResult');if(old){try{const x=JSON.parse(old);document.getElementById('saveState').textContent='توجد نتيجة محفوظة سابقة';}catch(e){localStorage.removeItem('geographyQuizResult')}}
+if(n-1!==90)console.error('عدد الأسئلة غير صحيح:',n-1);else console.info('تم التحقق: 90 سؤالًا.');update();renderDashboard();
+</script>
+</body></html>
